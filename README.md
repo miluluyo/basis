@@ -1,7 +1,7 @@
 # basis
 知识点页面
 
-[Html基础（上学时期整理的）](https://miluluyo.github.io/basis/html%E6%A0%87%E7%AD%BE/frameset.html) 可直接看 [html的基础知识](https://mp.weixin.qq.com/s/21Irs1dpGWgmzGTbEvzPCA)
+[Html基础（上学时期整理的）](https://miluluyo.github.io/basis/html%E6%A0%87%E7%AD%BE/frameset.html) 可看 [html的基础知识](https://mp.weixin.qq.com/s/21Irs1dpGWgmzGTbEvzPCA)
 
 [基础js（上学时期整理的）](https://miluluyo.github.io/basis/%E5%9F%BA%E7%A1%80js/)
 
