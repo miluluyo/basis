@@ -1,0 +1,649 @@
+* {
+			font-size: 13px;
+		}
+		#box {
+			width: 500px;
+			height: 1000px;
+			margin: 10px auto;
+
+		}
+		#box div span:nth-child(1) {
+			font-size: 16px;
+		}
+		.jajs {
+			width: 500px;
+			height: 100px;
+			border:1px solid #666;
+			text-align: center;
+			line-height: 33px;
+		}
+		
+		.bsf {
+			margin-top: 10px;
+			width: 500px;
+			height: 150px;
+			border:1px solid #666;
+			line-height: 24px;
+			text-align: center;
+		}
+		
+		.bsf div span {
+			font-size: 10px;
+		}
+		.bsf div {
+			width: 330px;
+			height: 150px;
+			text-align: left;
+			margin-left: 100px;
+		}
+		.jssx {
+			margin-top: 10px;
+			width: 500px;
+			height: 150px;
+			border:1px solid #666;
+			line-height: 24px;
+			text-align: center;
+		}
+		
+		.jssx div span {
+			font-size: 10px;
+		}
+		.jssx div {
+			width: 330px;
+			height: 150px;
+			text-align: left;
+			margin-left: 100px;
+		}
+		
+		.jssjlx{
+			width: 500px;
+			height: 150px;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 24px;
+		}
+		.jssjlx div span {
+			font-size: 10px;
+		}
+		.jssjlx div {
+			width: 330px;
+			height: 150px;
+			text-align: left;
+			margin-left: 100px;
+		}
+		.ysf {
+			width: 500px;
+			height: 170px;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 20px;
+		}
+		.ysf table {
+			margin: 0px auto;
+		}
+		.ysf table tr td {
+			height: 20px;
+			width: 250px;
+		}
+		.ljkz {
+			width: 500px;
+			height: 210px;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 20px;
+		}
+		.lxzhhs {
+			width: 500px;
+			height: 100px;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 24px;
+		}
+		.jssj {
+			width: 500px;
+			height: 300px;
+			border:1px solid #666;
+			margin-top: 10px;
+		}
+		.jssj img {
+			width: 500px;
+			height: 300px;
+		}
+		.hs {
+			width: 500px;
+			height: 150px;
+			border:1px solid #666;
+			margin-top: 10px;
+			text-align: center;
+			line-height: 18px;
+		}
+		.pmd{
+			width: 500px;
+			height: 100px;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+		}
+		.pmd ul li {
+			list-style: none;
+			float: left;
+			width: 50px;
+			height: 50px;
+			margin-left: 10px;
+			border: 1px solid #666;
+			line-height: 50px;
+		}
+		.sz {
+			width: 500px;
+			height: 200px;
+			overflow: auto;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+		}
+		.sz table td:nth-child(1){
+			width: 100px;
+		}
+		.sz table td {
+			height: 30px;
+		}
+		.wdcyff {
+			width: 500px;
+			height: 120px;
+			overflow: auto;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 20px;
+		}
+		.wdcyff table {
+			width: 500px;
+		}
+		.tan {
+			margin-top: 10px;
+			width: 500px;
+			height: 100px;
+			border:1px solid #666;
+			text-align: center;
+			line-height: 24px;
+		}
+		.wdcysx {
+			width: 500px;
+			height: 100px;
+			overflow: auto;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 21px;
+		}
+		.wdcysx table {
+			width: 500px;
+		}
+		.bomdom {
+			width: 500px;
+			height: 50px;
+			overflow: auto;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 22px;
+		}
+		.dcmcysx {
+			width: 500px;
+			height: 80px;
+			overflow: auto;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 22px;
+		}
+		.dcmcysx table {
+			width: 500px;
+		}
+
+		.dcmcyff {
+			width: 500px;
+			height: 120px;
+			overflow: auto;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 20px;
+		}
+		.dcmcyff table {
+			width: 500px;
+		}
+		.jcsx {
+			width: 500px;
+			height: 120px;
+			line-height: 20px;
+			border:1px solid #666;
+			margin-top: 10px;
+		}
+		.jcsx table {
+			width: 500px;
+		}
+		.vbsx {
+			width: 500px;
+			height: 100px;
+			overflow: auto;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 20px;
+		}
+		.vbsx table {
+			width: 500px;
+		}
+		.dpsx {
+			width: 500px;
+			height: 100px;
+			overflow: auto;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 20px;
+		}
+		.dpsx table {
+			width: 500px;
+		}
+		#hxcdbox {
+			width:500px;
+			height: 170px;
+			margin-top: 20px;
+			border: 1px solid #666;
+		}
+		#hxcdbox .hxcdtop div {
+			width: 150px;
+			height: 40px;
+			background-color: #669933;
+			color: white;
+			text-align: center;
+			line-height: 40px;
+			margin-left: 1px;
+			margin-top: 1px;
+			float: left;
+		}
+		#hxcdbox .fen div {
+			width: 150px;
+			height: 40px;
+			background-color: #669933;
+			color: white;
+			text-align: center;
+			line-height: 40px;
+			margin-left: 1px;
+			margin-top: 1px;
+		}
+		#hxcdbox .fen {
+			float: left;
+		}
+		#hxcdbox .noshow{
+       		display: none;
+
+    	}
+		#hxcdbox .fen:nth-child(3){
+			position: relative;
+			left: 151px;
+		}
+		#hxcdbox .fen:nth-child(4){
+			position: relative;
+			left: 302px;
+		}
+		#hxcdbox div div:hover {
+			background-color: #ee9d01;
+
+		}
+		.jdsx {
+			width: 500px;
+			height: 410px;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 20px;
+
+		}
+		.jdsx table{
+			width: 500px;
+		}
+		.bgdx {
+			width: 500px;
+			/*height: 440px;*/
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 20px;
+		}
+		.bgdx table{
+			width: 500px;
+		}
+/*修改订单*/
+		#xgdd {
+			width: 500px;
+			height: 150px;
+			overflow: auto;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+		}
+		#xgdd table{
+			text-align: center;
+			font-size: 15px;
+		}
+		#xgdd table tr {
+			height: 30px;
+		}
+		#xgdd table tr:nth-child(1){
+			background-color: #ccc;
+
+		}
+		#xgdd table tr td:nth-child(1){
+			width: 200px;
+		}
+		#xgdd table tr td:nth-child(2){
+			width: 70px;
+		}
+		#xgdd table tr td:nth-child(3){
+			width: 70px;
+		}
+		#xgdd table tr td:nth-child(4){
+			width: 150px;
+		}
+		
+		.yssxz {
+			width: 500px;
+			height: 130px;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 21px;
+		}
+
+		.gdjlsx {
+			width: 500px;
+			height: 150px;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 21px;
+		}
+		.gdjlsx table {
+			width: 500px;
+		}
+		.stdx {
+			width: 500px;
+			height: 170px;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 21px;
+		}
+		.stdxff {
+			width: 500px;
+			height: 130px;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 21px;
+		}
+		.stdxff table {
+			width: 500px;
+		}
+		.stdx table {
+			width: 500px;
+		}
+		.wbkdx {
+			width: 500px;
+			height: 230px;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 21px;
+		}
+		.wbkdx table {
+			width: 500px;
+		}
+		.zzbds {
+			width: 500px;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 21px;
+		}
+		.zzbds table {
+			width: 500px;
+		}
+
+
+/*无缝滚动*/
+		#wfgd {
+			width: 500px;
+			height: 200px;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			
+		}
+		#wfgd #main {
+			width: 500px;
+			height: 155px;
+			margin: 10px auto;/*元素如果不设宽的话，是无法居中的*/
+			overflow: hidden;/*超出部分隐藏*/
+		}
+		#wfgd #pic {
+			width: 1000px;
+			height: 155px;
+		}
+		#wfgd #pic img {
+			width: 100px;
+			height: 155px;
+			/*浮动能去掉间距*/
+			float: left;
+		}
+
+/*碰壁反弹*/
+		#pbft {
+			width: 500px;
+			height: 240px;
+			text-align: center;
+			margin-top: 10px;
+			
+		}
+		#pbft #main1 {
+			position: relative;
+			width: 500px;
+			height: 240px;
+			border:1px solid #666;
+		}
+		#pbft #ball {
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			background-color: green;
+			border-radius: 25px;
+			text-align: center;
+			line-height: 50px;
+
+		}
+
+/*JS拖拽效果*/
+		#jstz {
+			width: 500px;
+			height: 240px;
+			text-align: center;
+			margin-top: 10px;
+			border:1px solid #666;
+		}
+		#main2 {
+			width: 500px;
+			height: 240px;
+			position: relative;
+		}
+		#jstz #main2 #box2{
+			width: 100px;
+			height: 100px;
+			background-color: #fc0;
+			position: absolute;
+			left: 0;
+			top: 0;
+			border-radius: 50px;
+			text-align: center;
+			font-size: 20px;
+			line-height: 100px;
+		}
+/*JS放大镜效果*/
+		#jsfdj {
+			width: 500px;
+			height: 170px;
+			margin-top: 10px;
+			border:1px solid #666;
+
+		}
+		#jsfdj #fdjbox {
+			margin-top: 10px;
+			margin-left: 100px;
+			position: relative;
+		}
+		#jsfdj #leftImg {
+			width: 150px;
+			height: 150px;
+		}
+		#jsfdj #lv {
+			width: 75px;
+			height: 75px;
+			position: absolute;
+			background-color: rgba(255,150,0,0.4);
+			top: 0px;
+			left: 0px;
+			display: none;
+		}
+		#jsfdj .fdjleft {
+			float: left;
+		}
+		#jsfdj #fdjright {
+			width: 150px;
+			height:150px;
+			overflow: hidden;
+			margin-top: 10px;
+			display: none;
+		}
+		#rightImg{
+			width: 300px;
+			height: 300px;
+		}
+
+
+
+
+
+
+		.jsq {
+			width: 500px;
+			height: 100px;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 33px;
+		}
+		.inou {
+			width: 500px;
+			height: 100px;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 24px;
+		}
+		.sui {
+			width: 500px;
+			height: 100px;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 33px;
+		}
+		.huan{
+			width: 500px;
+			height: 100px;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 33px;
+		}
+		.Dtime{
+			width: 500px;
+			height: 100px;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 33px;
+		}
+		.shun{
+			width: 500px;
+			height: 100px;
+			border:1px solid #666;
+			text-align: center;
+			line-height: 24px;
+			margin-top: 10px;
+		}
+		.azzfc{
+			width: 500px;
+			height: 50px;
+			border:1px solid #666;
+			text-align: center;
+			line-height: 25px;
+			margin-top: 10px;
+		}
+		.ewsz{
+			width: 500px;
+			height: 100px;
+			border:1px solid #666;
+			text-align: center;
+			line-height: 24px;
+			margin-top: 10px;
+		}
+		.sbzb{
+			width: 500px;
+			height: 100px;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			line-height: 24px;
+		}
+		.ssjl {
+			width: 500px;
+			height: 150px;
+			border:1px solid #666;
+			text-align: center;
+			margin-top: 10px;
+			
+		}
+
+
+
+/*广告图层*/
+		body {
+			width: 100%;
+			height: 100%;
+		
+		}
+		.gg {
+			background-color: #ccc;
+			width: 150px;
+			height: 180px;
+			position: absolute;
+			top: 30px;
+			left: 40px;
+			text-align: center;
+			line-height: 20px;
+		}
+		.gg span{
+			color: orange;
+		}
+		a {
+			text-decoration: none;
+			color: blue;
+		}
+		

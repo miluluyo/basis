@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zhengli1</title>
+</head>
+<body style="background-color: #C0D9D9">
+	<p>有序列表</p>
+	<ol>
+		<li>啦啦啦</li>
+		<li>哗哗哗</li>
+		<li>滴滴滴</li>
+	</ol>
+	<ol type="a">
+		<li>啦啦啦</li>
+		<li>哗哗哗</li>
+		<li>滴滴滴</li>
+	</ol>
+	<ol type="i">
+		<li>啦啦啦</li>
+		<li>哗哗哗</li>
+		<li>滴滴滴</li>
+	</ol>
+
+	<p>无序列表</p>
+	<ul>
+		<li>哈哈哈</li>
+		<li>喵喵喵</li>
+		<li>汪汪汪</li>
+	</ul>
+	<p>横线</p>
+	<hr style="width:100%; height:10px;background-color: blue;">
+	<p>定义描述</p>
+	<dl>
+		<dt>标题</dt>
+		<dd>描述</dd>
+	</dl><br>
+	<p>单纯的文字格式标签</p>
+	<span><b>加粗文本</b></span><br>
+	<span><i>斜体文本</i></span><br>
+	<span><b><i>粗斜体文本</i></b></span><br>
+	<span><em>被强调文本（特性斜体）</em></span><br><br>
+	<strong>加粗文本</strong><br><br>
+	<small><span>小号字体文本</span></small><br>
+	普通文本<sup>上标文本</sup><br>
+	普通文本<strong><sub>下标粗体文本</sub></strong><br>
+	<bdo dir="ltr">从左到右的文本</bdo><br>
+	<bdo dir="rtl">从右到左的文本</bdo><br>
+
+	<br>
+	<fieldset>
+		<legend>
+		这被称作定义域
+		</legend>
+		01213546523132165465
+	</fieldset>
+	
+	<br>
+	<marquee behavior="" direction="">鼠标放不放都滚动，默认属性：从右到左</marquee>
+	<marquee behavior="scroll" direction="right" onmouseover="this.stop()" onmouseout="this.start()">鼠标放上停止滚动,鼠标离开继续滚动。从左到右</marquee>
+
+	<p>单元格</p>
+	<table border="1">
+		<tr>
+			<td>第一行第一列</td><td>第一行第二列</td>
+			
+		</tr>
+		<tr>
+			<td>第二行第一列</td><td>第二行第二列</td>
+		</tr>
+	</table>
+	<p>单元格合并</p>
+	<table border="1">
+		<tr><td colspan="2" rowspan="2">合并区</td><td>1-3</td></tr>
+		<tr><td>2-3</td></tr>
+		<tr><td>3-1</td><td>3-2</td><td>3-3</td></tr>
+
+	<br>
+	<table border="1" cellspacing="5" cellpadding="10" style="width:100%;">
+		<caption>文字居中</caption>
+		<thead style="background-color: red">
+			<tr align="center">
+				<td>头部标签</td>
+			</tr>
+		</thead>
+		<tbody style="background-color: green">
+			<tr align="center">
+				<td>内容标签</td>
+			</tr>
+		</tbody>
+		<tfoot style="background-color:gray">
+			<tr align="center">
+				<td>尾部标签</td>
+			</tr>
+		</tfoot>
+	</table>
+
+	<p>分区标签</p>
+	<div style="background-color: red; width: 100px;height: 50px;" align="center">略略略</div>
+	<p align="center">文字居中</p>
+
+	&nbsp;&nbsp;<p>空格符</p>
+
+	<p>图片链接</p>
+	<img src="1.jpg" alt="">
+
+	<p>相对地址链接</p>
+	<a href="www.baidu.com">百度</a><br>
+
+	<p>出发地</p>
+	<a href="#跳跃">跳跃到一个位置，为方便确认，将跳跃设置到了最后</a><br>
+
+	跨链接只需要输入 路径# <br>
+	<a href="整理1附1.html">路径</a><br>
+
+	功能性链接（邮箱）<br>
+	<a href="mailto:邮箱.html">邮箱</a>
+	<br>
+
+	<p>简单的注册页面</p>
+	<form action="/" method="get">
+		<h2>注册页面</h2>
+		<p><label for="account">账号：</label><input type="text" id="account"></p>
+		<p><label for="psd">密码：</label><input type="password" id="psd"></p>
+		<input type="submit" value="注册">
+
+		<p>普通文本输入框</p>
+		<input type="text"><br>
+
+		<p>密码输入框</p>
+		<input type="password"><br>
+
+		<p>按钮</p>
+		<button>按钮</button>
+
+		
+		<p>文本域</p>
+		<textarea name="word" id="word"  readonly="readonly">这是文本域内的文字</textarea>
+		<br><br>
+
+		<input type="submit" value="同意啥条件，就让你注册" disabled="disabled">
+		<br>
+
+		<p>下拉列表</p>
+		<select name="form" id="form">
+			<option value="0">请选择</option>
+			<option value="1">选项A</option>
+			<option value="2">选项B</option>
+			<option value="3">选项C</option>
+		</select>
+		<br><br>
+		下面是允许多选的列表框: <br>
+		<select name="" id="" multiple="multiple" size="4">
+			<option value="0">疯狂Java讲义</option>
+			<option value="1">疯狂Android讲义</option>
+			<option value="2">轻量级Java EE企业应用实战</option>
+		</select><br>
+		下面是允许多选的列表框：<br>
+		<select name="" id="" multiple="multiple" size="6">
+			<optgroup label="疯狂Java体系图书">
+				<option value="0">aaaaaa</option>
+				<option value="1">疯狂Android讲义</option>
+				<option value="2">轻量级Java EE企业应用实战</option>
+			</optgroup>		
+				<optgroup label="其他图书">
+				<option value="0">Struts 2.1权威指南</option>
+				<option value="0">RoR敏捷开发最佳实践</option>
+			</optgroup>
+		</select><br>
+		</select><br>
+
+		<p>单选和多选</p>
+		<p>性别：
+		<input type="radio" name="sex" id="male"><label for="male">男</label>
+		<input type="radio" name="sex" id="famale"><label for="famale">女</label>
+		</p>
+		<p>专长：
+			<input type="checkbox" name="skills" id="html"><label for="html">HTML</label>
+			<input type="checkbox" name="skills" id="css"><label for="css">CSS</label>
+			<input type="checkbox" name="skills" id="js"><label for="js">JS</label>
+		</p>
+
+		<p>选择文件</p>
+		<input type="file" id="file">
+		<br>
+
+
+
+		<p>重置按钮</p>
+		<input type="reset" value="重置">
+	</form>
+
+	<p>提交按钮</p>
+	<input type="submit" value="提交">
+
+	<p>提交表单按钮</p>
+	<input type="submit">
+	<br>
+
+	<p>登录按钮</p>
+	<input type="button" value="登录">
+	<br><br>
+
+	<a href="" name="跳跃">跳跃到了这里</a>
+</body>
+</html>
