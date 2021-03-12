@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flex布局一览</title>
+<style type="text/css">
+a{text-decoration: none;color: gray}
+
+h2{text-align: center;margin:50px auto;}
+h3{text-align: center;margin:30px auto;}
+h4{text-align: center;}
+.content{max-width: 1250px;margin:0 auto 200px;}
+
+label{background-color: #F0F0F0;padding: 5px;}
+.item{border:1px solid #ccc;height: 100px;width: 30%;text-align: center;line-height: 100px}
+
+.navigation{position: fixed;width: 200px;right: 10px;top: 10px;border:1px solid #ccc;padding: 10px}
+.nav_title{font-size: 20px;font-weight: 800;text-align: center;margin: 5px auto}
+.nav_li_title{font-weight: 800;font-size: 16px;margin: 5px}
+.nav_li{text-indent: 15px;color: #ccc;font-size: 14px}
+.nav_li a{color: #666;text-decoration: none;}
+.nav_li a:hover{color:green;}
+
+/**/
+.box1 .item_list{min-height: 250px;border:1px solid gray;display: flex;flex-direction: row;}
+.box2 .item_list{min-height: 250px;border:1px solid gray;display: flex;flex-direction: row-reverse;}
+.box3 .item_list{min-height: 250px;border:1px solid gray;display: flex;flex-direction: column;}
+.box4 .item_list{min-height: 250px;border:1px solid gray;display: flex;flex-direction: column-reverse;}
+
+/**/
+.box5 .item_list{min-height: 250px;border:1px solid gray;display: flex;flex-wrap: nowrap;}
+.box6 .item_list{min-height: 250px;border:1px solid gray;display: flex;flex-wrap: wrap;}
+.box7 .item_list{min-height: 250px;border:1px solid gray;display: flex;flex-wrap: wrap-reverse;}
+
+/*justify-content*/
+.box8 .item_list{}
+.box8 .item_list{min-height: 250px;border:1px solid gray;display: flex;justify-content: center;}
+.box8 .item_list .item{width: 15%}
+.box9 .item_list{min-height: 250px;border:1px solid gray;display: flex;justify-content: flex-start}
+.box9 .item_list .item{width: 15%}
+.box10 .item_list{min-height: 250px;border:1px solid gray;display: flex;justify-content: flex-end}
+.box10 .item_list .item{width: 15%}
+.box11 .item_list{min-height: 250px;border:1px solid gray;display: flex;justify-content: space-around}
+.box11 .item_list .item{width: 15%}
+.box12 .item_list{min-height: 250px;border:1px solid gray;display: flex;justify-content: space-around;}
+.box12 .item_list .item{width: 15%}
+
+/**/
+
+.box13 .item_list{min-height: 250px;border:1px solid gray;display: flex;align-items:flex-start;}
+.box13 .item_list .item{width: 15%;}
+.box14 .item_list{min-height: 250px;border:1px solid gray;display: flex;align-items:flex-end;}
+.box14 .item_list .item{width: 15%;}
+.box15 .item_list{min-height: 250px;border:1px solid gray;display: flex;align-items:center;}
+.box15 .item_list .item{width: 15%;}
+.box16 .item_list{min-height: 250px;border:1px solid gray;display: flex;align-items:stretch;}
+.box16 .item_list .item{width: 15%;height: auto;}
+.box17 .item_list{min-height: 250px;border:1px solid gray;display: flex;align-items:baseline;}
+.box17 .item_list .item{width: 15%;height: auto;}
+.box17 .item_list .item:nth-child(1){line-height: 25px}
+.box17 .item_list .item:nth-child(2){line-height: 50px}
+.box17 .item_list .item:nth-child(3){line-height: 75px}
+.box17 .item_list .item:nth-child(4){line-height: 100px}
+/**/
+.box18 .item_list{min-height: 250px;border:1px solid gray;display: flex;flex-flow: row wrap;align-content:stretch;justify-content: space-between}
+.box19 .item_list{min-height: 250px;border:1px solid gray;display: flex;flex-flow: row wrap;align-content:stretch;justify-content: flex-start}
+.box20 .item_list{min-height: 250px;border:1px solid gray;display: flex;flex-flow: row wrap;align-content:stretch;justify-content: flex-end}
+.box21 .item_list{min-height: 250px;border:1px solid gray;display: flex;flex-flow: row wrap;align-content:stretch;justify-content: center}
+.box22 .item_list{min-height: 250px;border:1px solid gray;display: flex;flex-flow: row wrap;align-content:stretch;justify-content: space-between}
+.box23 .item_list{min-height: 250px;border:1px solid gray;display: flex;flex-flow: row wrap;align-content:stretch;justify-content: space-around}
+/**/
+.box24 .item_list{min-height: 250px;border:1px solid gray;display: flex;flex-flow: row wrap;}
+.box24 .item_list .item:nth-child(1){order: 4}
+.box24 .item_list .item:nth-child(2){order: 1}
+.box24 .item_list .item:nth-child(3){order: 7}
+.box24 .item_list .item:nth-child(4){order: 9}
+.box24 .item_list .item:nth-child(5){order: 2}
+.box24 .item_list .item:nth-child(6){order: 8}
+.box24 .item_list .item:nth-child(7){order: 3}
+.box24 .item_list .item:nth-child(8){order: 6}
+
+.box25 .item_list{min-height: 250px;border:1px solid gray;display: flex;flex-flow: row wrap;}
+.box25 .item_list .item:nth-child(1){width: auto;flex-grow: 1}
+.box25 .item_list .item:nth-child(2){width: auto;flex-grow: 10}
+.box25 .item_list .item:nth-child(3){width: auto;flex-grow: 1}
+
+.box26 .item_list{min-height: 250px;border:1px solid gray;display: flex;}
+.box26 .item_list .item:nth-child(1){flex-shrink: 0}
+.box26 .item_list .item:nth-child(2){flex-shrink: 0}
+.box26 .item_list .item:nth-child(3){flex-shrink: 0}
+.box26 .item_list .item:nth-child(4){flex-shrink: 1}
+
+.box27 .item_list{min-height: 250px;border:1px solid gray;display: flex;}
+.box27 .item_list .item:nth-child(4){flex-basis: 600px}
+
+.box28 .item_list{min-height: 250px;border:1px solid gray;display: flex;}
+.box28 .item_list .item{line-height: 50px}
+.box28 .item_list .item:nth-child(1){align-self:baseline;}
+.box28 .item_list .item:nth-child(2){align-self:flex-end;}
+.box28 .item_list .item:nth-child(3){align-self:flex-start;}
+.box28 .item_list .item:nth-child(4){align-self:center;}
+
+</style>
+</head>
+<body>
+	<div class="content">
+		<a name="flextitle"></a>
+		<h2>Flex 布局一览</h2>
+		<a name="one"></a>
+		<h3>父元素属性</h3>
+		<a name="flex-direction"></a>
+		<h4>flex-direction : 容器内元素排列方向</h4>
+		<br>
+		<div class="box1">
+			<div class="title">
+				<p>
+					<label>flex-direction: row</label> ：默认值 沿水平主轴从左到右排列
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</div>
+		<div class="box2">
+			<div class="title">
+				<p>
+					<label>flex-direction: row</label> ：沿水平主轴从右到左排列
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</div>
+		<div class="box3">
+			<div class="title">
+				<p>
+					<label>flex-direction: column</label> ：沿垂直主轴从上到下排列
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</div>
+		<div class="box4">
+			<div class="title">
+				<p>
+					<label>flex-direction: column-reverse</label> ：沿垂直主轴从下到上排列
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</div>
+
+		<a name="flex-wrap"></a>
+		<h4>flex-wrap : 容器内元素是否换行</h4>
+		<br>
+		<div class="box5">
+			<div class="title">
+				<p>
+					<label>flex-wrap: nowrap</label> ：默认值 不换行
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</div>
+		<div class="box6">
+			<div class="title">
+				<p>
+					<label>flex-wrap: wrap</label> ：换行，第一行在上面
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</div>
+		<div class="box7">
+			<div class="title">
+				<p>
+					<label>flex-wrap: wrap-reverse</label> ：换行，第一行在下面
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</div>
+		<a name="flex-flow"></a>
+		<h4>flex-flow : 简写</h4>
+		<div class="title">
+			<p>
+				<label>flex-flow: row nowrap</label> ：flex-direction属性和flex-wrap属性的简写
+			</p>
+		</div>
+		<br>
+		<a name="justify-content"></a>
+		<h4>justify-content : 元素在主轴的对齐方式</h4>
+		<br>
+		<div class="box8">
+			<div class="title">
+				<p>
+					<label>justify-content: center</label> ：元素在主轴上居中
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</div>
+		<div class="box9">
+			<div class="title">
+				<p>
+					<label>justify-content: flex-start</label> ：元素在主轴上左对齐或上对齐
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</div>
+		<div class="box10">
+			<div class="title">
+				<p>
+					<label>justify-content: flex-end</label> ：元素在主轴上右对齐或下对齐
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</div>
+		<div class="box11">
+			<div class="title">
+				<p>
+					<label>justify-content: space-between</label> ：元素在主轴上两端对齐，元素之间间隔相等
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</div>
+		<div class="box12">
+			<div class="title">
+				<p>
+					<label>justify-content : space-around</label> ：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</div>
+
+		<a name="align-items"></a>
+		<h4>align-items : 元素在交叉轴上对齐方式</h4>
+		<br>
+		<div class="box13">
+			<div class="title">
+				<p>
+					<label>align-items : flex-start</label> ：交叉轴的起点对齐（上面或左边）
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</div>
+		<div class="box14">
+			<div class="title">
+				<p>
+					<label>align-items : flex-end</label> ：交叉轴的终点对齐（下面或有右边）
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</div>
+		<div class="box15">
+			<div class="title">
+				<p>
+					<label>align-items：center</label> ：交叉轴的中点对齐
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</div>
+		<div class="box16">
+			<div class="title">
+				<p>
+					<label>align-items：stretch</label> ：默认值、如果元素未设置高度或设为auto，将占满整个容器的高度
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1 <br> height:auto</div>
+				<div class="item">2 <br> height:auto</div>
+				<div class="item">3 <br> height:auto</div>
+				<div class="item">4 <br> height:auto</div>
+			</div>
+		</div>
+		<div class="box17">
+			<div class="title">
+				<p>
+					<label>align-items：baseline</label> ：以元素的第一行文字的基线对齐
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1 <br> height: auto;&nbsp;line-height: 25px</div>
+				<div class="item">2 <br> height: auto;&nbsp;line-height: 25px</div>
+				<div class="item">3 <br> height: auto;&nbsp;line-height: 25px</div>
+				<div class="item">4 <br> height: auto;&nbsp;line-height: 25px</div>
+			</div>
+		</div>
+
+		<a name="align-content"></a>
+		<h4>align-content : 多根轴线对齐方式。如果元素只有一根轴线，该属性不起作用。</h4>
+
+		<br>
+		<div class="box18">
+			<div class="title">
+				<p>
+					<label>align-content:stretch</label> ：默认值，轴线占满整个交叉轴
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+				<div class="item">5</div>
+				<div class="item">6</div>
+				<div class="item">7</div>
+				<div class="item">8</div>
+			</div>
+		</div>
+		<div class="box19">
+			<div class="title">
+				<p>
+					<label>align-content: flex-start</label> ：从交叉轴开始位置填充
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+				<div class="item">5</div>
+				<div class="item">6</div>
+				<div class="item">7</div>
+				<div class="item">8</div>
+			</div>
+		</div>
+		<div class="box20">
+			<div class="title">
+				<p>
+					<label>align-content: flex-end</label> ：从交叉轴结尾位置填充
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+				<div class="item">5</div>
+				<div class="item">6</div>
+				<div class="item">7</div>
+				<div class="item">8</div>
+			</div>
+		</div>
+		<div class="box21">
+			<div class="title">
+				<p>
+					<label>align-content: center</label> ：与交叉轴中点对齐
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+				<div class="item">5</div>
+				<div class="item">6</div>
+				<div class="item">7</div>
+				<div class="item">8</div>
+			</div>
+		</div>
+		<div class="box22">
+			<div class="title">
+				<p>
+					<label>align-content: space-between</label> ：与交叉轴两端对齐，轴线之前的间隔平均分布
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+				<div class="item">5</div>
+				<div class="item">6</div>
+				<div class="item">7</div>
+				<div class="item">8</div>
+			</div>
+		</div>
+		<div class="box23">
+			<div class="title">
+				<p>
+					<label>align-content: space-around</label> ：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+				<div class="item">5</div>
+				<div class="item">6</div>
+				<div class="item">7</div>
+				<div class="item">8</div>
+			</div>
+		</div>
+
+		<a name="two"></a>
+		<h3>子元素属性</h3>
+		<a name="order"></a>
+		<h4>order : 设置或检索弹性盒模型对象的子元素出现的順序。数值越小，排列越靠前，默认为0</h4>
+		<br>
+		<div class="box24">
+			<div class="item_list">
+				<div class="item">1 order:4</div>
+				<div class="item">2 order:1</div>
+				<div class="item">3 order:7</div>
+				<div class="item">4 order:9</div>
+				<div class="item">5 order:2</div>
+				<div class="item">6 order:8</div>
+				<div class="item">7 order:3</div>
+				<div class="item">8 order:6</div>
+			</div>
+		</div>
+
+		<a name="flex-grow"></a>
+		<h4>flex-grow : 属性用于设置或检索弹性盒子的扩展比率。默认为0，即如果存在剩余空间，也不放大。</h4>
+		<br>
+		<div class="box25">
+			<div class="item_list">
+				<div class="item">1 flex-grow:1</div>
+				<div class="item">2 flex-grow:10</div>
+				<div class="item">3 flex-grow:1</div>
+			</div>
+		</div>
+
+		<a name="flex-shrink"></a>
+		<h4>flex-shrink :指定了 flex 元素的收缩规则。默认为1，flex 元素仅在默认宽度之和大于容器的时候才会发生收缩，其收缩的大小是依据 flex-shrink 的值。</h4>
+		<br>
+		<div class="box26">
+			<div class="item_list">
+				<div class="item">1 flex-shrink:0</div>
+				<div class="item">2 flex-shrink:0</div>
+				<div class="item">3 flex-shrink:0</div>
+				<div class="item">4 flex-shrink:1</div>
+			</div>
+		</div>
+
+		<a name="flex-shrink"></a>
+		<h4>flex-shrink :用于设置或检索弹性盒伸缩基准值。它的默认值为auto，即它的本来大小。</h4>
+		<br>
+		<div class="box27">
+			<div class="item_list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4 flex-shrink: 600px</div>
+			</div>
+		</div>
+
+		<a name="flex-basis"></a>
+		<h4>flex-basis :用于设置或检索弹性盒伸缩基准值。它的默认值为auto，即它的本来大小。</h4>
+		<br>
+		<div class="box27">
+			<div class="item_list">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4 flex-basis: 600px</div>
+			</div>
+		</div>
+
+		<a name="flex"></a>
+		<h4>flex : 简写</h4>
+		<div class="title">
+			<p>
+				<label>flex:0 1 auto。</label>  flex-grow, flex-shrink 和 flex-basis的简写，后两个属性可选。默认值为：flex:0 1 auto。
+			</p>
+		</div>
+		<br>
+
+		<a name="align-self"></a>
+		<h4>align-self : 属性定义flex子项单独在侧轴（纵轴）方向上的对齐方式。可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。
+		<br>
+		align-self : auto | flex-start | flex-end | center | baseline | stretch;
+		</h4>
+		<br>
+		<div class="box28">
+			<div class="title">
+				<p>
+					<label>align-self : auto | flex-start | flex-end | center | baseline | stretch;</label>
+				</p>
+			</div>
+			<div class="item_list">
+				<div class="item">1 <br> align-self: baseline;</div>
+				<div class="item">2 <br> align-self:flex-end;</div>
+				<div class="item">3 <br> align-self:flex-start;</div>
+				<div class="item">4 <br> align-self:center;</div>
+			</div>
+		</div>
+	</div>
+	<div class="navigation">
+		<div class="nav_title">
+			<a href="#flextitle">flex布局</a>
+		</div>
+		<div class="nav_li_title">
+			<a href="#one">1.父元素属性</a>
+		</div>
+		<div class="nav_li">
+			<a href="#flex-direction">flex-direction</a>
+		</div>
+		<div class="nav_li">
+			<a href="#flex-wrap">flex-wrap</a>
+		</div>
+		<div class="nav_li">
+			<a href="#flex-flow">flex-flow</a>
+		</div>
+		<div class="nav_li">
+			<a href="#justify-content">justify-content</a>
+		</div>
+		<div class="nav_li">
+			<a href="#align-items">align-items</a>
+		</div>
+		<div class="nav_li">
+			<a href="#align-content">align-content</a>
+		</div>
+		<div class="nav_li_title">
+			<a href="#two">2.子元素属性</a>
+		</div>
+		<div class="nav_li">
+			<a href="#order">order</a>
+		</div>
+		<div class="nav_li">
+			<a href="#flex-grow">flex-grow</a>
+		</div>
+		<div class="nav_li">
+			<a href="#flex-shrink">flex-shrink</a>
+		</div>
+		<div class="nav_li">
+			<a href="#flex-basis">flex-basis</a>
+		</div>
+		<div class="nav_li">
+			<a href="#flex">flex</a>
+		</div>
+		<div class="nav_li">
+			<a href="#align-self">align-self</a>
+		</div>
+	</div>
+</body>
+</html>
