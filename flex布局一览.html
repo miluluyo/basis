@@ -13,12 +13,21 @@ h4{text-align: center;}
 label{background-color: #F0F0F0;padding: 5px;}
 .item{border:1px solid #ccc;height: 100px;width: 30%;text-align: center;line-height: 100px}
 
-.navigation{position: fixed;width: 200px;right: 10px;top: 10px;border:1px solid #ccc;padding: 10px}
+.navigation{position: fixed;width: 200px;right: 10px;top: 10px;border:1px solid #ccc;padding: 10px;display: block}
 .nav_title{font-size: 20px;font-weight: 800;text-align: center;margin: 5px auto}
 .nav_li_title{font-weight: 800;font-size: 16px;margin: 5px}
 .nav_li{text-indent: 15px;color: #ccc;font-size: 14px}
 .nav_li a{color: #666;text-decoration: none;}
 .nav_li a:hover{color:green;}
+
+.item:nth-child(1){background-color: #845ec2}
+.item:nth-child(2){background-color: #ffc75f}
+.item:nth-child(3){background-color: #f9f871}
+.item:nth-child(4){background-color: #ff5e78}
+.item:nth-child(5){background-color: #95e1d3}
+.item:nth-child(6){background-color: #eaffd0}
+.item:nth-child(7){background-color: #fce38a}
+.item:nth-child(8){background-color: #ff75a0}
 
 /**/
 .box1 .item_list{min-height: 250px;border:1px solid gray;display: flex;flex-direction: row;}
@@ -99,6 +108,9 @@ label{background-color: #F0F0F0;padding: 5px;}
 .box28 .item_list .item:nth-child(3){align-self:flex-start;}
 .box28 .item_list .item:nth-child(4){align-self:center;}
 
+@media screen and (max-width: 1800px){
+	.navigation{display: none;}
+}
 </style>
 </head>
 <body>
